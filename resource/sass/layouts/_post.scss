@@ -1,0 +1,48 @@
+.post {
+    padding: 20px 0;
+    &-item {
+        padding: 40px 0;
+        .template-category {
+            @include flex-center-vert
+        }
+        .btn-link {
+            border: 1px solid $grey;
+            min-height: 28px;
+            padding: 1px 15px 1px 10px;
+            @include flex-center;
+            word-break: break-word;
+            line-height: 15px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+        .btn-link .text:hover {
+            color: $blue1;
+        }
+        .btn-link.btn-last {
+            margin-left: 10px;
+        }
+        .text {
+            margin-left: 10px;
+            font-size: 14px;
+            color: $black;
+            transition: .3s ease;
+            font-weight: bold;
+        }
+        h4 a {
+            color: $black2;
+            font-size: 18px;
+            padding: 0;
+            margin-bottom: 10px;
+            display: block;
+            transition: .3s ease;
+        }
+        h4 a:hover {
+            color: $blue2;
+        }
+        .post-content {
+            @include flex-center-vert;
+            font-size: 12px;
+            color: $grey3;
+        }
+    }
+}

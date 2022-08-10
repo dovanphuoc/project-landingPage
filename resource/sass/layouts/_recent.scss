@@ -1,0 +1,161 @@
+.recent {
+    margin-bottom: 60px;
+    .recent-img {
+        border-radius: 5px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+    .recent-img::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .3s ease;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .template-wrap {
+        position: relative;
+        transition: .3s ease;
+    }
+    .recent-img::after {
+        content: '\f03e';
+        font-family: 'Font Awesome 5 Pro';
+        @include flex-center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: $white;
+        font-size: 14px;
+    }
+    .recent-img:hover::before {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .recent-img:hover .template-wrap {
+        transform: translateY(-15px);
+    }
+    .recent-img.thumb {
+        background: url('../../assets/img/thumb.jpg');
+        padding-top: 39.4%;
+        @include cover-background;
+    }
+    .template-category {
+        @include flex-center-vert
+    }
+    .btn-link {
+        border: 1px solid $grey;
+        min-height: 28px;
+        padding: 1px 15px 1px 10px;
+        @include flex-center;
+        word-break: break-word;
+        line-height: 15px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        background: $white;
+    }
+    .btn-link .text:hover {
+        color: $blue1;
+    }
+    .btn-link.btn-last {
+        margin-left: 10px;
+    }
+    .text {
+        margin-left: 10px;
+        font-size: 14px;
+        color: $black;
+        transition: .3s ease;
+    }
+    h4 a {
+        color: $white;
+        font-size: 23px;
+        padding: 0;
+        margin-bottom: 10px;
+        display: block;
+        transition: .3s ease;
+    }
+    .post-content {
+        @include flex-center-vert;
+        font-size: 12px;
+        color: $white;
+    }
+    .post-excerpt p {
+        color: $white;
+        font-size: 15px;
+        margin: 15px 0;
+        font-weight: bold;
+        line-height: 1.75;
+    }
+    .recent-content {
+        h3 {
+            font-size: 30px;
+            color: $black;
+            border-bottom: 1px solid $grey;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .template-item {
+            margin-bottom: 25px;
+        }
+        .template-item:last-child {
+            margin-bottom: 0;
+        }
+        .btn-link {
+            border: 1px solid $grey;
+            min-height: 28px;
+            padding: 1px 15px 1px 10px;
+            @include flex-center;
+            word-break: break-word;
+            line-height: 15px;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            background: $black;
+        }
+        .btn-link .text:hover {
+            color: $blue1;
+        }
+        .btn-link.btn-last {
+            margin-left: 10px;
+        }
+        .text {
+            margin-left: 10px;
+            font-size: 14px;
+            color: $black;
+            transition: .3s ease;
+        }
+        h4 a {
+            color: $black;
+            font-size: 18px;
+            padding: 0;
+            margin-bottom: 10px;
+            display: block;
+            transition: .3s ease;
+        }
+        h4 a:hover {
+            color: $blue1;
+        }
+        .post-content {
+            @include flex-center-vert;
+            font-size: 12px;
+            color: $grey3;
+        }
+        .post-author a {
+            color: $black;
+            font-weight: 600;
+            transition: .3s ease;
+        }
+        .post-author a:hover {
+            color: $blue1;
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .recent .template-wrap {
+        max-width: 100%;
+    }
+}

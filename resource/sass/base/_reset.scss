@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
+}
+
+.owl-theme .owl-nav {
+    margin-top: unset !important;
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.owl-nav .owl-prev::before {
+    content: '\f060';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 14px;
+    color: $white;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    background: $black1 !important;
+}
+
+.owl-nav .owl-prev span,
+.owl-nav .owl-next span {
+    display: none;
+}
+
+.owl-nav .owl-next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.owl-nav .owl-next::before {
+    content: '\f061';
+    font-family: 'Font Awesome 5 Pro';
+    font-size: 14px;
+    color: $white;
+}

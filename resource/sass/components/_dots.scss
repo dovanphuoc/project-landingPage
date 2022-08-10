@@ -1,0 +1,34 @@
+.dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.purple {
+    background: $purple;
+}
+
+.dot.blue {
+    background: $blue;
+}
+
+.dot.blue-bold {
+    background: $blue_bold;
+}
+
+.dot.pink {
+    background: $pink1;
+}
+
+.dot.orange {
+    background: $orange;
+}
+
+.post-info-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    border: 1px solid $grey2;
+    margin: 0 7px;
+}

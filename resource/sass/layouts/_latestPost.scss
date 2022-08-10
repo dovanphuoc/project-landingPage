@@ -1,0 +1,221 @@
+.latest-post {
+    .video-item.thumb {
+        padding-top: 36%;
+    }
+    .post-excerpt p {
+        color: $black3;
+        font-size: 15px;
+        margin: 15px 0;
+        font-weight: 600;
+        line-height: 1.75;
+    }
+    .technology-img.thumb11 {
+        background: url('../../assets/img/thumb11.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb5 {
+        background: url('../../assets/img/thumb5.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb18 {
+        background: url('../../assets/img/thumb18.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb21 {
+        background: url('../../assets/img/thumb21.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb27 {
+        background: url('../../assets/img/thumb27.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb15 {
+        background: url('../../assets/img/thumb15.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb28 {
+        background: url('../../assets/img/thumb28.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb20 {
+        background: url('../../assets/img/thumb20.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb {
+        background: url('../../assets/img/thumb.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb13 {
+        background: url('../../assets/img/thumb13.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .technology-img.thumb14 {
+        background: url('../../assets/img/thumb14.jpg');
+        padding-top: 65.1%;
+        @include cover-background;
+        overflow: hidden;
+        position: relative;
+    }
+    .value {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: $white;
+        font-size: 14px;
+        background: $bg_blue;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        @include flex-center;
+        border: 2px solid $white;
+    }
+    .technology-title h3 {
+        border-bottom: 1px solid $grey;
+        padding-bottom: 20px;
+    }
+    .latest-post-title {
+        margin-bottom: 30px;
+    }
+    .latest-post-intro {
+        padding: 50px 40px;
+        background-color: $grey4;
+        position: relative;
+        margin-bottom: 40px;
+        h5 {
+            color: $black;
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 15px;
+            margin-bottom: 30px;
+            color: $black3;
+            font-weight: 600;
+            line-height: 1.75;
+            max-width: 81%;
+        }
+        a {
+            color: $white;
+            background-color: $blue1;
+            padding: 13px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            display: inline-block;
+            transition: .3s ease;
+        }
+        a:hover {
+            color: $white;
+            background-color: $black1;
+        }
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            position: absolute;
+            right: 40px;
+            top: 50px;
+        }
+    }
+    .popular-item {
+        h3 a {
+            font-size: 16px;
+        }
+    }
+    .technology-title h3 {
+        font-size: 22px;
+    }
+    .load-more {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .load-more a {
+        color: $white;
+        background-color: $blue1;
+        padding: 13px 30px;
+        border-radius: 5px;
+        font-size: 16px;
+        display: inline-block;
+        transition: .3s ease;
+    }
+    .load-more a:hover {
+        color: $white;
+        background-color: $black1;
+    }
+    .latest-post-thumb {
+        margin-bottom: 40px;
+    }
+    .social-subscribe {
+        margin-top: 30px;
+        a {
+            @include flex-center-between;
+            margin-bottom: 8px;
+            padding: 6px 20px;
+            border-radius: 5px;
+            color: $white;
+        }
+        .votes h5 {
+            font-size: 14px;
+        }
+        .votes span {
+            text-transform: unset;
+        }
+        .social-icon .icon {
+            font-size: 15px;
+        }
+        a.blue {
+            background-color: $blue3;
+        }
+        a.blue4 {
+            background-color: $blue4;
+        }
+        a.blue5 {
+            background-color: $blue5;
+        }
+        a.red1 {
+            background-color: $red1;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .technology-title {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .video h4 a {
+        font-size: 22px;
+    }
+}

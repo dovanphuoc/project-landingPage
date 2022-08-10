@@ -1,0 +1,149 @@
+.travel {
+    &-item {
+        border-radius: 5px;
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 40px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transition: .3s ease;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+    .travel-img::after {
+        content: '\f028';
+        font-family: 'Font Awesome 5 Pro';
+        @include flex-center;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        background-color: $white;
+        font-size: 14px;
+    }
+    &-item.thumb1 {
+        background: url('../../assets/img/thumb1.jpg');
+        padding-top: 56.23%;
+        @include cover-background;
+    }
+    &-item.thumb8 {
+        background: url('../../assets/img/thumb8.jpg');
+        padding-top: 64.6%;
+        @include cover-background;
+    }
+    &-item.thumb10 {
+        background: url('../../assets/img/thumb10.jpg');
+        padding-top: 56.23%;
+        @include cover-background;
+    }
+    &-item.thumb11 {
+        background: url('../../assets/img/thumb11.jpg');
+        padding-top: 56.23%;
+        @include cover-background;
+    }
+    &-item.thumb21 {
+        background: url('../../assets/img/thumb21.jpg');
+        padding-top: 56.23%;
+        @include cover-background;
+    }
+    &-item.thumb17 {
+        background: url('../../assets/img/thumb17.jpg');
+        padding-top: 56.23%;
+        @include cover-background;
+    }
+    .travel-item:hover::before {
+        background: rgba(0, 0, 0, 0.6);
+    }
+    .template-wrap {
+        position: relative;
+        transition: .3s ease;
+    }
+    .travel-item:hover .template-wrap {
+        transform: translateY(-15px);
+    }
+    .template-category {
+        @include flex-center-vert
+    }
+    .btn-link {
+        border: 1px solid $grey;
+        min-height: 28px;
+        padding: 1px 15px 1px 10px;
+        @include flex-center;
+        word-break: break-word;
+        line-height: 15px;
+        border-radius: 20px;
+        margin-bottom: 10px;
+        background: $white;
+    }
+    .btn-link .text:hover {
+        color: $blue1;
+    }
+    .btn-link.btn-last {
+        margin-left: 10px;
+    }
+    .text {
+        margin-left: 10px;
+        font-size: 14px;
+        color: $black;
+        transition: .3s ease;
+    }
+    h4 a {
+        color: $white;
+        font-size: 22px;
+        padding: 0;
+        margin-bottom: 10px;
+        display: block;
+        transition: .3s ease;
+    }
+    .post-content {
+        @include flex-center-vert;
+        font-size: 12px;
+        color: $white;
+    }
+    .post-excerpt p {
+        color: $white;
+        font-size: 15px;
+        margin: 15px 0;
+        font-weight: bold;
+        line-height: 1.75;
+    }
+    .load-data {
+        text-align: center;
+        .btn {
+            font-size: 16px;
+            color: $white;
+            padding: 13px 30px;
+            border-radius: 5px;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .travel-item.thumb21 {
+        padding-top: 66.23%;
+    }
+    .travel-item.thumb11 {
+        padding-top: 47.23%;
+    }
+    .travel-item.thumb10 {
+        padding-top: 46%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .travel-item.thumb11 {
+        padding-top: 54.23%;
+    }
+    .travel-item.thumb17 {
+        padding-top: 66%;
+    }
+}

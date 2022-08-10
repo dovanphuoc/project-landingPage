@@ -1,0 +1,38 @@
+.blog {
+    .blog-wrap {
+        margin-bottom: 60px;
+        text-align: center;
+    }
+    h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: $black3;
+    }
+    p {
+        font-size: 15px;
+        color: $black3;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    a {
+        font-size: 16px;
+        color: $white;
+        width: 192px;
+        margin: auto;
+        height: 44px;
+        line-height: 44px;
+        border-radius: 5px;
+        margin-bottom: 40px;
+        background: $blue1;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .blog h3 {
+        font-size: 22px;
+    }
+    .blog p {
+        line-height: 1.75;
+    }
+}

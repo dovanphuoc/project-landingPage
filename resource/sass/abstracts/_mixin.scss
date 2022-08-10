@@ -1,0 +1,76 @@
+// Mixin flex box
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around
+}
+
+@mixin flex-center-column {
+    @include flex-center;
+    flex-direction: column;
+}
+
+@mixin flex-center-vert {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flex-center-horiz {
+    display: flex;
+    justify-content: center;
+}
+
+//   Mixin cover background
+@mixin cover-background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// Mixin position
+@mixin absoluteCenter($direction: 'left') {
+    position: absolute;
+    @if $direction=='left' {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $direction=='top' {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $direction=='both' {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

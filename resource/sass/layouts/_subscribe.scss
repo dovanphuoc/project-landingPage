@@ -1,0 +1,101 @@
+.subscribe {
+    .subscribe-img {
+        border-radius: 5px;
+        padding: 30px;
+        overflow: hidden;
+        margin-bottom: 40px;
+        position: relative;
+    }
+    .subscribe-img.thumb22 {
+        background: url('../../assets/img/thumb22.jpg');
+        padding-top: 25.3%;
+        @include cover-background;
+    }
+    .subscribe-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        h4 {
+            color: $white;
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+    }
+    #form-submit {
+        @include flex-center-horiz;
+        input {
+            padding: 15px 20px;
+            background: $white;
+            border-radius: 5px;
+            flex-basis: 70%
+        }
+        input::placeholder {
+            color: $grey3;
+            font-size: 16px;
+        }
+        .btn.btn-submit {
+            flex-basis: 30%;
+            border-radius: 5px;
+            background: $blue1;
+            color: $white;
+            font-size: 16px;
+            margin-left: 15px;
+            transition: .3s ease;
+        }
+        .btn.btn-submit:hover {
+            color: $white;
+            background: $black1;
+        }
+    }
+    p {
+        margin-top: 30px;
+        color: $white;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subscribe .subscribe-content {
+        width: 60%;
+    }
+    .subscribe #form-submit input {
+        flex-basis: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .subscribe .subscribe-content {
+        width: 80%;
+    }
+    .subscribe #form-submit input {
+        flex-basis: 60%;
+    }
+    .subscribe .subscribe-img.thumb22 {
+        padding-top: 63.3%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .subscribe #form-submit {
+        flex-direction: column;
+    }
+    .subscribe #form-submit .btn.btn-submit {
+        padding: 13px 30px;
+        margin-left: unset;
+        margin-top: 10px;
+    }
+    .subscribe .subscribe-img.thumb22 {
+        padding-top: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .subscribe .subscribe-content h4 {
+        font-size: 22px;
+    }
+    .subscribe .subscribe-content {
+        width: 90%;
+    }
+}
